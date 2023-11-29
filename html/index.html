@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css2/stylosPaginas.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg container-fluid  position-fixed z-1 headers" >
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <img src="/assets/ico/resetacomida-icono.png" width="60px" alt="">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ResetasConSazon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/catalogo.html">Catalogo</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+
+                    </form>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="/assets/ico/person-circle.svg" class="img-fluid rounded-top " alt=""
+                            style="width: 50px; ">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Inicio De Sesion</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-12">
+                                <label for="validationCustom01" class="form-label">Gmail</label>
+                                <input type="email" class="form-control" id="gmailLU"  required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="validationCustom02" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="PasswordLU" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit" onclick="Login()">Iniciar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a type="button" class="btn btn-primary">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main >
+        <div id="carouselExampleAutoplaying" class="carousel slide container-sm " data-bs-ride="carousel"
+            style="padding-top: 5rem;   ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/carusel/salmon-1238248_1280.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/carusel/pizza-3007395_1280.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/carusel/dessert-352475_1280.jpg" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            
+        </div>
+    </main>
+<div class="fondo1">
+    <section style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="row justify-content-evenly align-items-center gap-3">
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 18rem">
+                <img src="/assets/carusel/pizza-3007395_1280.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <button class="btn btn-primary w-50 ">Mas Detalless</button>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 18rem">
+                <img src="/assets/carusel/pizza-3007395_1280.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <button class="btn btn-primary w-50 ">Mas Detalless</button>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 18rem">
+                <img src="/assets/carusel/pizza-3007395_1280.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <button class="btn btn-primary w-50 ">Mas Detalless</button>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-3" style="width: 18rem">
+                <img src="/assets/carusel/pizza-3007395_1280.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
+                <button class="btn btn-primary w-50 ">Mas Detalless</button>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 30px;padding-bottom: 20px;">
+        <div class="card mb-3 " >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="/assets/img/cocinero.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 "style="margin-top: 50px;" >
+            <div class="row g-0">
+                <div class="col-md-8" >
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/img/-cocina-.png" class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <footer class="">
+        <div class="container" style="padding: 20px;">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Contacto</h3>
+                    <p>Correo electrónico: info@example.com</p>
+                    <p>Teléfono: 123-456-7890</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Derechos de autor</h3>
+                    <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="/js/administracion_Gestion.js"></script>
+</body>
+
+</html>

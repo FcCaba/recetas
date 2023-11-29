@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro de receta</title>
+  <link rel="stylesheet" href="../css2/login_regis_admin_style.css">
+
+</head>
+<body class="gradient-custom">
+  <a href="./index.html" style="text-decoration: none;background-color:rgba(37, 117, 252, 1);padding: 5px; border-radius: 5px; color: aliceblue;">Inicio</a>
+  <a href="./inventario.html" style="float: right; text-decoration: none;background-color:rgba(106, 17, 203, 1);padding: 5px; border-radius: 5px; color: aliceblue;">inventario</a>
+  <h1>Formulario de registro de receta</h1>
+  <form action="guardar_receta.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nombre_receta">Nombre de la receta</label>
+      <input type="text" class="form-control" id="nombre_receta" name="nombre_receta" required>
+    </div>
+    <div class="form-group">
+      <label for="ingredientes">Ingredientes</label>
+      <textarea class="form-control" id="ingredientes" name="ingredientes" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="instrucciones">Preparación</label>
+      <textarea class="form-control" id="instrucciones" name="instrucciones" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="tiempo_preparacion">Tiempo de preparación</label>
+      <input type="number" class="form-control" id="tiempo_preparacion" name="tiempo_preparacion" required>
+    </div>
+    <div class="form-group">
+      <label for="dificultad">Dificultad</label>
+      <select class="form-control" id="dificultad" name="dificultad">
+        <option value="facil">Fácil</option>
+        <option value="intermedia">Intermedia</option>
+        <option value="dificil">Difícil</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="calificacion">Calificación</label>
+      <input type="number" class="form-control" id="calificacion" name="calificacion" required>
+    </div>
+    <div class="form-group">
+      <label for="fecha_ingreso">Fecha de ingreso</label>
+      <input type="date" class="form-control" id="fecha_ingreso" name="fecha_ingreso">
+    </div>
+    <div class="form-group">
+      <label for="imagen">Imagen</label>
+      <input type="file" class="form-control-file" id="ifile" name="ifile">
+<img id="imgPreview" src="" alt="Vista previa de la imagen" >
+
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  <script src="../js/loginAdmin.js"></script>
+</body>
+</html>

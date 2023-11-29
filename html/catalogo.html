@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css2/styloCategoria.css">
+  
+</head>
+
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg headers">
+      <div class="container-fluid">
+        <img src="/assets/ico/resetacomida-icono.png" alt="" width="60px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/html/index.html">RecetasConSazon </a>
+            </li>
+            <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li> -->
+
+          </ul>
+          <button class="btn  position-relative" id="btncarrito" type="button" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+            <img src="/assets/img/carro.png" alt="" width="50">
+            <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </button><br>
+          <button class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Categorias
+          </button>
+          <form class="d-flex" role="search">
+
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+
+  </header>
+
+  <main class="" style="margin-top: 5.5em;">
+    <div class="btn btn-primary container-fluid" style="height: 4rem; ">
+      <h4 class="float-start justify-content-center">Categoria</h4>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="tipoCocina">Tipo de Cocina</label>
+            <select class="form-select" id="tipoCocina" aria-label="Tipo de Cocina">
+              <option value="0" selected>Selecciona una opción</option>
+              <option value="1">Italiana</option>
+              <option value="2">Mexicana</option>
+              <option value="3">Asiática</option>
+              <option value="4">Mediterránea</option>
+              <option value="5">Americana</option>
+              <option value="6">Vegetariana</option>
+              <option value="7">Vegana</option>
+              <!-- Agrega otras opciones según tus necesidades -->
+            </select>
+
+            <!-- Requisitos Dietéticos -->
+            <label for="requisitosDieteticos">Requisitos Dietéticos</label>
+            <select class="form-select" id="requisitosDieteticos" aria-label="Requisitos Dietéticos">
+              <option value="0" selected>Selecciona una opción</option>
+              <option value="1">Sin Gluten</option>
+              <option value="2">Bajo en Calorías</option>
+              <option value="3">Bajo en Grasas</option>
+              <option value="4">Rico en Proteínas</option>
+              <option value="5">Keto</option>
+              <option value="6">Paleo</option>
+              <option value="7">Sin Lácteos</option>
+              <option value="8">Sin Nueces</option>
+            </select>
+
+            <label for="tiempoPreparacion">Tiempo de Preparación</label>
+            <select class="form-select" id="tiempoPreparacion" aria-label="Tiempo de Preparación">
+              <option value="0" selected>Selecciona una opción</option>
+              <option value="1">Rápido (menos de 30 minutos)</option>
+              <option value="2">Moderado (30-60 minutos)</option>
+              <option value="3">Largo (más de 60 minutos)</option>
+            </select>
+            <label for="dificultad">Dificultad</label>
+            <select class="form-select" id="dificultad" aria-label="Dificultad">
+              <option value="0" selected>Selecciona una opción</option>
+              <option value="1">Fácil</option>
+              <option value="2">Intermedia</option>
+              <option value="3">Avanzada</option>
+            </select>
+            <button type="button" class="btn btn-primary">Filtrar</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCarrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+            <button type="button" id="btncarritoPosicion" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ... -->
+            <h6>Monto Total: <p id="montoTotal"></p>bs</h6>
+            <div class="">
+              <table id="tabla" class=" table-bordered container-fluid">
+                <thead>
+                  <tr>
+                    <td>Nº</td>
+                    <td>Descripción</td>
+                    <td>Precio</td>
+
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+              
+            </div>
+          </div>
+          <div class="modal-footer justify-content-evenly">
+            <div class=" gap-2">
+              <button type="button" name="" id="btnElim" class="btn btn-primary">ELIMINAR</button>
+              <button type="button" name="" id="btnComprarTodo" class="btn btn-primary">COMPRAR TODO</button>
+            </div>
+            <div class="gap-2">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <section class=" container-md justify-content-center gap-5" style="display: flex; flex-wrap: wrap; margin-top: 3rem;">
+
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/carusel/pizza-3007395_1280.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pizza</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#producto1">Mas Detalles</a>
+      </div>
+
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/carusel/dessert-352475_1280.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pizza</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#producto2">Mas Detalles</a>
+      </div>
+
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/assets/carusel/salmon-1238248_1280.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pizza</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#producto3">Mas Detalles</a>
+      </div>
+
+    </div>
+    <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content mx-auto ">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles De La Receta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ... -->
+            <div class=" mb-3" style="max-width: 90%;">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <img src="/assets/carusel/pizza-3007395_1280.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+
+
+
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre: <span id="nombre">PIZZA</span></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                      <div>
+                        <p>precio: $<span id="precio">20</span></p>
+                      </div>
+                      <a href="#" id="btnpizza" class="btn btn-primary">COMPRAR</a>
+                    </div>
+
+
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Agregar Al Carrido</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content mx-auto ">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles De La Receta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ... -->
+            <div class=" mb-3" style="max-width: 90%;">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <img src="/assets/carusel/pizza-3007395_1280.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+
+
+
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre: <span id="nombre2">ANVORGUEZA</span></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                      <div>
+                        <p>precio: $<span id="precio2">50</span></p>
+                      </div>
+                      <a href="#" id="btnbrgr" class="btn btn-primary">COMPRAR</a>
+                    </div>
+
+
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Agregar Al Carrido</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="producto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content mx-auto ">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles De La Receta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ... -->
+            <div class=" mb-3" style="max-width: 90%;">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <img src="/assets/carusel/pizza-3007395_1280.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+
+                    <h5 class="card-title">Nombre:  <span id="nombre4">HELADO</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div><p>precio: $<span id="precio4">25</span></p></div>
+                    <a href="#" id="btnice" class="btn btn-primary">COMPRAR</a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                   
+
+
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Agregar Al Carrido</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11 .6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="/js/jquery-3.7.1.js"></script>
+  <script src="/js/jqCategoria.js"></script>
+  <script src="/js/carrito.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css2/styleLogin.css" />
+  </head>
+
+  <body class="bg-danger">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Otro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="divespa" style="width: 100%"></div>
+      <section class="container-lg">
+        <div class="row">
+          <div class="col-12" style="height: 1rem"></div>
+          <div class="col-sm-6 col-md-6 col-lg-6 d-none d-md-block">
+            <picture>
+              <source srcset="sourceset" type="image/svg+xml+jpg" />
+              <img
+                src="/assets/carusel/pizza-3007395_1280.jpg"
+                class="img-fluid" 
+                alt="image desc"
+                style="border-radius: 10px;"
+              />
+            </picture>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <form class="row container-sm g-3 needs-validation bg-body-tertiary "  novalidate>
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationCustom02"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="validationCustom02" class="form-label"
+                      >Contraseña</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="PasswordLU"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-6">
+                    <label for="validationCustom04" class="form-label"
+                      >Tipo</label>
+                    <select
+                      class="form-select"
+                      id="validationCustom04"
+                      required
+                    >
+                      <option selected disabled value="">Choose...</option>
+                      <option>Inventario</option>
+                      <option>Administrativo</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit" onclick="Login()">
+                  Iniciar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <script src="/js/TipoUsuario.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+/* General */
+
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  .imagen {
+    width: 100px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+  }
+  @media (max-width: 576px) {
+    .table {
+      width: 100%;
+    }
+  
+    .imagen {
+      width: 100%;
+    }
+  }
+  

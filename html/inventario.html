@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="../css2/styleInventario.css"> -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"
+    style="text-decoration: none;background-color:rgba(37, 117, 252, 1);padding: 5px; border-radius: 5px; color: aliceblue;">Inicio</a>
+    <a href="./inventario_Register.html"
+    style="text-decoration: none;background-color:rgba(37, 117, 252, 1);padding: 5px; border-radius: 5px; color: aliceblue;">Registrar
+    Receta</a>
+  </header>
+  
+
+  <main>
+    <h1>Inventario de recetas</h1>
+    <div class="table-responsive">
+      <table class="table table-bordered border-primary">
+
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Receta</th>
+            <th scope="col" class="w-25">
+              <p>Ingredientes y Preparacion</p>
+            </th>
+            <th scope="col">
+              <p>Dificultad y Calificacion</p>
+            </th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>
+              <div class="row justify-content-center align-items-center g-2" data-bs-spy="scroll">
+                <div class="col-12">
+                  <h6>Ingredientes:</h6>
+                  <p>adasdasdasd,asdasdasd,asdasd,adsa,asd</p>
+                </div>
+                <div class="col">
+                  <h6>Preparacion</h6>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, dolores possimus
+                  incidunt assumenda consequuntur maiores est aperiam expedita accusantium doloremque
+                  laboriosam, aspernatur id quaerat obcaecati earum dignissimos repudiandae laborum
+                  cupiditate!
+                </div>
+              </div>
+            </td>
+            <td>
+              <span class="badge bg-success ">Medio</span><br>
+              <span class="badge bg-success ">buena</span>
+            </td>
+            <td>@mdo</td>
+            <td>
+              <img src="/img/DreamShaper_v5_chica_con_orejas_de_gato_con_ropa_de_guerrera_2.jpg"
+                class="img-fluid align-content-center" alt="image desc" style="width: 15em;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="../js/loginAdmin.js"></script>
+</body>
+
+</html>

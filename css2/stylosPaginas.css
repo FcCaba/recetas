@@ -1,0 +1,20 @@
+*{
+    color: white !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fondo1{
+    background-color: rgb(255, 255, 255);
+}
+.headers{
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(119,5,175,0.8408613445378151) 65%, rgba(0,212,255,1) 100%);
+}
+.card{
+    /* background-image: linear-gradient(to left bottom, #4ca467, #59b75f, #6dc952, #88db3d, #a8eb12);  */
+    background-image: linear-gradient(to left bottom, #4c55a4, #5852bb, #6d4ad0, #893be0, #aa12eb);
+    -webkit-box-shadow: 1px 1px 20px 7px #000000; 
+    box-shadow: 1px 0.5px 28px 7px #000000;
+    
+    }
+footer{
+    background-image: linear-gradient(to top, #171b3a, #263863, #2e588f, #2d7bbd, #12a0eb);
+}
